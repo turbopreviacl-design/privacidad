@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacidad TurboPrevia</title>
+<meta name="description" content="Política de privacidad de la app TurboPrevia (juegos de previa y Previas).">
+<style>
+:root{--bg:#FFFFFF;--tx:#1B1F3B;--suave:#55597A;--linea:#E3E1EC;--acento:#D7263D;--caja:#F6F4FB}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A1424;--tx:#F6F1FF;--suave:#B9B2CC;--linea:#3A3148;--acento:#FF6B7F;--caja:#241C31}}
+:root[data-theme="dark"]{--bg:#1A1424;--tx:#F6F1FF;--suave:#B9B2CC;--linea:#3A3148;--acento:#FF6B7F;--caja:#241C31}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:2rem;line-height:1.15;margin:0 0 6px}
+h2{font-size:1.25rem;margin:32px 0 8px}
+h3{font-size:1.05rem;margin:20px 0 6px}
+p,li{color:var(--tx)}
+.fecha{color:var(--suave);margin:0 0 20px}
+.resumen{background:var(--caja);border:1px solid var(--linea);border-radius:14px;padding:14px 18px}
+.resumen ul{margin:6px 0 0;padding-left:20px}
+table{width:100%;border-collapse:collapse;font-size:.95rem;margin:10px 0}
+th,td{border:1px solid var(--linea);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--caja)}
+.tabla{overflow-x:auto}
+a{color:var(--acento)}
+.idioma{display:inline-block;margin:0 0 18px;font-weight:600}
+hr{border:0;border-top:1px solid var(--linea);margin:48px 0}
+small{color:var(--suave)}
+</style>
+</head>
+<body>
+<main>
+<a class="idioma" href="#english">English version ↓</a>
+<h1>Política de privacidad de TurboPrevia</h1>
+<p class="fecha">Última actualización: 13 de octubre de 2026</p>
+
+<div class="resumen">
+<b>En corto:</b>
+<ul>
+<li>Los juegos funcionan sin cuenta y sus datos se quedan en tu teléfono.</li>
+<li>Solo si usas <b>Previas</b> (encontrar previas y hacer match con otros grupos) guardamos los datos necesarios para que funcione: tu perfil, el de tu grupo, tus previas y tus chats.</li>
+<li>No vendemos tus datos, no mostramos publicidad y no usamos tu información para perfiles publicitarios.</li>
+<li>Puedes borrar tu cuenta de Previas cuando quieras desde la app.</li>
+</ul>
+</div>
+
+<h2>1. Quién es el responsable</h2>
+<p>TurboPrevia es desarrollada por Cristóbal Reyes Meneses, Chile. Contacto: <a href="mailto:turboprevia.cl@gmail.com">turboprevia.cl@gmail.com</a>.</p>
+
+<h2>2. Juegos (sin cuenta)</h2>
+<p>Los nombres de jugadores, ajustes, favoritos y contenido personalizado se guardan solo en tu teléfono. No se envían a ningún servidor y se borran si desinstalas la app o borras sus datos.</p>
+
+<h2>3. Sala multijugador (opcional)</h2>
+<p>Si juegas en varios celulares, el apodo que elijas y las jugadas de la partida se envían cifrados a través del servicio de mensajería en tiempo real de Supabase, para que los otros teléfonos de la sala los vean. Esos mensajes no se guardan en una base de datos y solo existen mientras dura la partida.</p>
+
+<h2>4. Previas (opcional)</h2>
+<p>Previas te permite crear el perfil de tu grupo, publicar una previa, encontrar previas cercanas, hacer match con otros grupos y chatear. Para que funcione, guardamos estos datos en nuestros servidores (Supabase):</p>
+<div class="tabla"><table>
+<tr><th>Dato</th><th>Para qué se usa</th><th>Quién lo ve</th></tr>
+<tr><td>Cuenta: un identificador anónimo, o tu correo y nombre de Google si eliges “Continuar con Google”</td><td>Iniciar sesión y recuperar tu grupo en otro teléfono</td><td>Nadie más</td></tr>
+<tr><td>Tu nombre y fecha de nacimiento</td><td>Verificar que eres mayor de 18 años</td><td>Nadie más</td></tr>
+<tr><td>Perfil del grupo: nombre, hasta 3 fotos, tipo de grupo, número de integrantes, rango de edad y comuna</td><td>Mostrar tu grupo a otros grupos</td><td>Otros usuarios de Previas</td></tr>
+<tr><td>Previas publicadas: hora, vibra, cupos, comuna, descripción y una ubicación aproximada (centro de la comuna, redondeada a ~1 km)</td><td>Mostrar previas cercanas</td><td>Otros usuarios de Previas</td></tr>
+<tr><td>Dirección de la previa (opcional)</td><td>Que los grupos aceptados sepan dónde llegar</td><td>Solo los grupos que tú aceptas</td></tr>
+<tr><td>Solicitudes, matches y mensajes del chat</td><td>Conectar grupos y que puedan coordinarse</td><td>Solo los grupos del match</td></tr>
+<tr><td>Reportes y bloqueos</td><td>Seguridad y moderación</td><td>Solo el equipo de TurboPrevia (los reportes son anónimos para el grupo reportado)</td></tr>
+</table></div>
+<p><b>No usamos el GPS de tu teléfono:</b> la ubicación es solo la comuna que eliges. Tampoco accedemos a tus contactos.</p>
+<p><b>Cuánto tiempo se guardan:</b> las previas dejan de mostrarse unas horas después de empezar. Tu perfil, tu grupo, tus fotos y tus chats se guardan mientras tengas la cuenta; al borrarla, se eliminan. Los reportes pueden conservarse hasta 12 meses para fines de seguridad.</p>
+<p><b>Seguridad:</b> los datos viajan cifrados (HTTPS) y la base de datos tiene reglas que limitan qué puede ver cada usuario: por ejemplo, la dirección solo la ven los grupos aceptados y los chats solo los participantes del match.</p>
+
+<h2 id="borrar-cuenta">5. Cómo borrar tu cuenta y tus datos</h2>
+<p><b>Desde la app:</b> Previas → ⚙️ Ajustes → “Borrar mi cuenta de Previas”. Se eliminan de inmediato tu cuenta, perfil, grupo, fotos, previas, solicitudes, matches y mensajes.</p>
+<p><b>Si ya no tienes la app:</b> escribe a <a href="mailto:turboprevia.cl@gmail.com?subject=Borrar%20mi%20cuenta%20de%20Previas">turboprevia.cl@gmail.com</a> con el asunto “Borrar mi cuenta”, indicando el correo de Google con el que entraste o el nombre de tu grupo. Lo borramos dentro de 30 días.</p>
+<p>Si entraste “sin cuenta”, desinstalar la app no borra tu grupo del servidor: usa la opción de borrar desde la app o escríbenos.</p>
+
+<h2>6. Compras</h2>
+<p>La suscripción Premium se procesa a través de Google Play. Nunca recibimos ni guardamos datos de pago; la app solo consulta a Google Play si tu suscripción está activa.</p>
+
+<h2>7. Servicios de terceros</h2>
+<ul>
+<li><b>Supabase</b>: base de datos, almacenamiento de fotos, inicio de sesión y mensajería en tiempo real. <a href="https://supabase.com/privacy">Política de Supabase</a>.</li>
+<li><b>Google</b>: inicio de sesión con Google (opcional) y compras en Google Play. <a href="https://policies.google.com/privacy">Política de Google</a>.</li>
+</ul>
+<p>No compartimos tus datos con otros terceros, salvo que la ley lo exija.</p>
+
+<h2>8. Permisos de la app</h2>
+<p>Vibración y mantener la pantalla encendida. Para subir fotos del grupo, la app te deja elegir una imagen; solo se sube la que tú eliges. No accede a contactos, micrófono ni ubicación GPS.</p>
+
+<h2>9. Edad mínima</h2>
+<p>TurboPrevia es solo para mayores de 18 años. Previas exige indicar tu fecha de nacimiento y bloquea a menores. Si detectamos que un grupo incluye menores de edad, lo eliminamos.</p>
+
+<h2>10. Tus derechos</h2>
+<p>Puedes pedir acceso, corrección o eliminación de tus datos escribiendo a <a href="mailto:turboprevia.cl@gmail.com">turboprevia.cl@gmail.com</a>. Gran parte puedes hacerlo tú mismo desde la app (editar tu grupo o borrar tu cuenta).</p>
+
+<h2>11. Consumo responsable</h2>
+<p>La app incluye un modo sin alcohol. Si vas a manejar, no tomes. En Previas, júntate en grupo y avísale a alguien de confianza dónde vas. TurboPrevia solo conecta grupos: no organiza ni responde por las previas.</p>
+
+<h2>12. Cambios</h2>
+<p>Si cambiamos esta política, publicaremos la nueva versión en esta misma página con una nueva fecha.</p>
+
+<hr>
+
+<section id="english" lang="en">
+<h1>TurboPrevia Privacy Policy</h1>
+<p class="fecha">Last updated: October 13, 2026</p>
+
+<h2>1. Who we are</h2>
+<p>TurboPrevia is developed by Cristóbal Reyes Meneses, Chile. Contact: <a href="mailto:turboprevia.cl@gmail.com">turboprevia.cl@gmail.com</a>.</p>
+
+<h2>2. Games (no account)</h2>
+<p>Player names, settings, favorites and custom content are stored only on your phone. They are never sent to a server and are deleted if you uninstall the app or clear its data.</p>
+
+<h2>3. Multiplayer room (optional)</h2>
+<p>When playing on several phones, your chosen nickname and game moves are sent encrypted through Supabase's real-time messaging so other phones in the room can see them. These messages are not stored in a database and only exist during the game.</p>
+
+<h2>4. Previas (optional)</h2>
+<p>Previas lets you create a group profile, post a previa (pre-party), find nearby previas, match with other groups and chat. To make it work we store, on our servers (Supabase):</p>
+<ul>
+<li><b>Account:</b> an anonymous identifier, or your Google email and name if you choose “Continue with Google”. Visible to no one else.</li>
+<li><b>Your name and date of birth:</b> to verify you are 18+. Visible to no one else.</li>
+<li><b>Group profile:</b> name, up to 3 photos, group type, size, age range and area (comuna). Visible to other Previas users.</li>
+<li><b>Posted previas:</b> time, vibe, spots, area, description and an approximate location (area center, rounded to ~1 km). Visible to other Previas users.</li>
+<li><b>Previa address (optional):</b> visible only to groups you accept.</li>
+<li><b>Requests, matches and chat messages:</b> visible only to the matched groups.</li>
+<li><b>Reports and blocks:</b> for safety and moderation, seen only by the TurboPrevia team.</li>
+</ul>
+<p>We do not use your phone's GPS and do not access your contacts. Previas stop being shown a few hours after they start. Your profile, group, photos and chats are kept while you have an account and deleted when you delete it. Reports may be kept up to 12 months for safety. Data is encrypted in transit (HTTPS) and database rules restrict what each user can see.</p>
+
+<h2>5. Deleting your account and data</h2>
+<p><b>In the app:</b> Previas → ⚙️ Settings → “Delete my Previas account”. Your account, profile, group, photos, previas, requests, matches and messages are deleted immediately.</p>
+<p><b>Without the app:</b> email <a href="mailto:turboprevia.cl@gmail.com?subject=Delete%20my%20Previas%20account">turboprevia.cl@gmail.com</a> with the subject “Delete my account”, including the Google email you used or your group name. We delete it within 30 days.</p>
+
+<h2>6. Purchases</h2>
+<p>The Premium subscription is processed by Google Play. We never receive or store payment data.</p>
+
+<h2>7. Third-party services</h2>
+<p>Supabase (database, photo storage, sign-in, real-time messaging) and Google (optional Google sign-in, Google Play purchases). We do not sell or share your data with anyone else unless required by law. No ads.</p>
+
+<h2>8. Age, permissions and changes</h2>
+<p>TurboPrevia is for adults 18+ only; Previas requires your date of birth and blocks minors. The app uses vibration and keep-screen-on, and lets you pick a photo to upload for your group. Changes to this policy will be posted on this page with a new date.</p>
+</section>
+
+<p><small>© 2026 TurboPrevia · <a href="mailto:turboprevia.cl@gmail.com">turboprevia.cl@gmail.com</a></small></p>
+</main>
+</body>
+</html>
